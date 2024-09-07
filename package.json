@@ -1,0 +1,22 @@
+{
+  "name": "promptfoo-node-sample",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "author": "yukinagae <yuki.nagae1130@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "22"
+  },
+  "scripts": {
+    "eval": "tsx src/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "check": "biome check ./src",
+    "fix": "biome check --write ./src"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  }
+}
